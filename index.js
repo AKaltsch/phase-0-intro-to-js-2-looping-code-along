@@ -23,8 +23,15 @@ function writeCards(names, event) {
    return messages
 }
 
+// function countDown(number) {
+//     for (number; number >= 0; number--) {
+//         console.log(number)
+//     }
+// }
+
 function countDown(number) {
-    for (number; number >= 0; number--) {
+    while (number >= 0) {
         console.log(number)
+        number-=1
     }
 }
