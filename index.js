@@ -15,23 +15,38 @@
 
 // wrapGifts(gifts)
 
-function writeCards(names, event) {
-   let messages = []
-   for (let i = 0; i < names.length; i++) {
-       messages.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
-   }
-   return messages
-}
+// function writeCards(names, event) {
+//    let messages = []
+//    for (let i = 0; i < names.length; i++) {
+//        messages.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
+//    }
+//    return messages
+// }
+
+// // function countDown(number) {
+// //     for (number; number >= 0; number--) {
+// //         console.log(number)
+// //     }
+// // }
 
 // function countDown(number) {
-//     for (number; number >= 0; number--) {
+//     while (number >= 0) {
 //         console.log(number)
+//         number-=1
 //     }
 // }
 
-function countDown(number) {
-    while (number >= 0) {
-        console.log(number)
-        number-=1
+function writeCards(arr, event) {
+    let messages = []
+    for (let i=0; i < arr.length; i++) {
+        messages.push(`Thank you, ${arr[i]}, for the wonderful ${event} gift!`)
     }
+    return messages;
 }
+
+function countDown(number) {
+        do {console.log(number)
+        number -= 1
+    } while (number >= 0)
+}
+
